@@ -24,11 +24,11 @@
     <!-- navbar -->
     <nav id="navbar">
       <div id="nav__logo">
-        <a href="#">ksh</a>
+        <a href="#">KSH</a>
       </div>
       <div id="nav__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item">home</li>
+          <li class="navbar__menu__item active">home</li>
           <li class="navbar__menu__item">about</li>
           <li class="navbar__menu__item">skills</li>
           <li class="navbar__menu__item">my work</li>
@@ -39,7 +39,7 @@
     </nav>
 
     <!-- home -->
-    <section id="home">
+    <section id="home" class="section">
       <img src="imgs/profile.png" class="home__avatar" />
 
       <h1 class="home__title">hello, <br />i'm dream coder</h1>
@@ -48,49 +48,36 @@
     </section>
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About me</h1>
-      <p></p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon"></div>
-          <div class="major__title">html</div>
-          <div class="major__description"></div>
-        </div>
-
-        <div class="major">
-          <div class="major__icon"></div>
-          <div class="major__title">css</div>
-          <div class="major__description"></div>
-        </div>
-
-        <div class="major">
-          <div class="major__icon"></div>
-          <div class="major__title">javascript</div>
-          <div class="major__description"></div>
-        </div>
-      </div>
+            
       <div class="about__jobs">
         <div class="job">
-          <p class="job__name">dgu</p>
-          <p class="job__period">2017~</p>
-        </div>
+					<img src="imgs/dgu.jpg" alt="dgu" class="job__logo"/>
+          <div class="job__discription">
+						<p class="job__name">Dongguk Univ Seoul</p>
+          	<p class="job__period">17'~ Majoring Information Engineering </p>
+        	</div>
+				</div>
         <div class="job">
-          <p class="job__name">conscripted firefighter</p>
-          <p class="job__period">2019~2021</p>
+					<img src="imgs/giff.jpg" alt="dgu" class="job__logo"/>
+          <div class="job__discription">
+          	<p class="job__name">conscripted firefighter</p>
+          	<p class="job__period">2019~2021</p>
+					</div>	
         </div>
       </div>
     </section>
 
     <!-- skills -->
-    <section id="skills">
+    <section id="skills" class="section">
 			<h1>skills</h1>
-			<h2>skills & attributes</h2>
+			<h2>languages & educations</h2>
 			<p>experience with all phases of the software</p>
 
 			<div class="skillset">
 				<div class="skillset__left">
-					<h3 class="skill__title">skills</h3>
+					<h3 class="skill__title">languages</h3>
 						<div class="skill">
 						<div class="skill_discription">
 							<span>html</span>
@@ -156,98 +143,98 @@
     <!-- Work -->
     <section id="work" class="section">
 			<div class="section__container">
-			<h1>My work</h1>
-			<h3>Projects</h3>
-			<div class="work__categories">
-			<button class="category__btn selected" data-filter="*">
-			All <span class="category__count">8</span>
-			</button>
-			<button class="category__btn" data-filter="front-end">
-			Front-end <span class="category__count">3</span>
-			</button>
-			<button class="category__btn" data-filter="back-end">
-			Back-end <span class="category__count">3</span>
-			</button>
-			<button class="category__btn" data-filter="mobile">
-			Mobile <span class="category__count">2</span>
-			</button>
-			</div>
-			<div class="work__projects">
-			<a href="" class="project" target="blank" data-type="front-end">
-			<img
-			src="imgs/projects/youtube.png"
-			alt="Youtube"
-			class="project__img"
-			/>
-			<div class="project__description">
-			<h3>Youtube Site</h3>
-			<span>Clone coding with HTML, CSS</span>
-			</div>
-			</a>
-			<a
-			href="https://github.com/dream-ellie/responsive-nav-bar"
-			class="project"
-			data-type="front-end"
-			target="blank"
-			>
-			<img
-			class="project__img"
-			src="imgs/projects/navbar.png"
-			alt="navbar"
-			/>
-			<div class="project__description">
-			<h3>Responsive Navbar</h3>
-			<span>HTML, CSS with media query</span>
-			</div>
-			</a>
-			<a
-			href="https://github.com/dream-ellie/responsive-nav-bar"
-			class="project"
-			data-type="front-end"
-			target="blank"
-			>
-			<img class="project__img" src="imgs/projects/game.png" alt="navbar" />
-			<div class="project__description">
-			<h3>Shopping mall game</h3>
-			<span>HTML, CSS, JavaScript, Json</span>
-			</div>
-			</a>
-			<a href="" class="project" data-type="back-end">
-			<img class="project__img" src="imgs/projects/game.png" alt="" />
-			<div class="project__description">
-			<h3>Project</h3>
-			<span>Explanation</span>
-			</div>
-			</a>
-			<a href="" class="project" data-type="back-end">
-			<img class="project__img" src="imgs/projects/game.png" alt="" />
-			<div class="project__description">
-			<h3>Project</h3>
-			<span>Explanation</span>
-			</div>
-			</a>
-			<a href="" class="project" data-type="mobile">
-			<img class="project__img" src="imgs/projects/game.png" alt="" />
-			<div class="project__description">
-			<h3>Project</h3>
-			<span>Explanation</span>
-			</div>
-			</a>
-			<a href="" class="project" data-type="mobile">
-			<img class="project__img" src="imgs/projects/game.png" alt="" />
-			<div class="project__description">
-			<h3>Project</h3>
-			<span>Explanation</span>
-			</div>
-			</a>
-			<a href="" class="project" data-type="mobile">
-			<img class="project__img" src="imgs/projects/game.png" alt="" />
-			<div class="project__description">
-			<h3>Project</h3>
-			<span>Explanation</span>
-			</div>
-			</a>
-			</div>
+			 <h1>My work</h1>
+			 <h3>Projects</h3>
+			 <div class="work__categories">
+				 <button class="category__btn selected" data-filter="*">
+					 All <span class="category__count">8</span>
+				 </button>
+				 <button class="category__btn" data-filter="front-end">
+					 Front-end <span class="category__count">3</span>
+				 </button>
+				 <button class="category__btn" data-filter="back-end">
+					 Back-end <span class="category__count">3</span>
+				 </button>
+				 <button class="category__btn" data-filter="mobile">
+					 Mobile <span class="category__count">2</span>
+				 </button>
+			 </div>
+			 <div class="work__projects">
+				 <a href="" class="project" target="blank" data-type="front-end">
+					 <img
+						 src="imgs/projects/youtube.png"
+						 alt="Youtube"
+						 class="project__img"
+					 />
+					 <div class="project__description">
+						 <h3>Youtube Site</h3>
+						 <span>Clone coding with HTML, CSS</span>
+					 </div>
+				 </a>
+				 <a
+					 href="https://github.com/dream-ellie/responsive-nav-bar"
+					 class="project"
+					 data-type="front-end"
+					 target="blank"
+				 >
+					 <img
+						 class="project__img"
+						 src="imgs/projects/navbar.png"
+						 alt="navbar"
+					 />
+					 <div class="project__description">
+						 <h3>Responsive Navbar</h3>
+						 <span>HTML, CSS with media query</span>
+					 </div>
+				 </a>
+				 <a
+					 href="https://github.com/dream-ellie/responsive-nav-bar"
+					 class="project"
+					 data-type="front-end"
+					 target="blank"
+				 >
+					 <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
+					 <div class="project__description">
+						 <h3>Shopping mall game</h3>
+						 <span>HTML, CSS, JavaScript, Json</span>
+					 </div>
+				 </a>
+				 <a href="" class="project" data-type="back-end">
+					 <img class="project__img" src="imgs/projects/game.png" alt="" />
+					 <div class="project__description">
+						 <h3>Project</h3>
+						 <span>Explanation</span>
+					 </div>
+				 </a>
+				 <a href="" class="project" data-type="back-end">
+					 <img class="project__img" src="imgs/projects/game.png" alt="" />
+					 <div class="project__description">
+						 <h3>Project</h3>
+						 <span>Explanation</span>
+					 </div>
+				 </a>
+				 <a href="" class="project" data-type="mobile">
+					 <img class="project__img" src="imgs/projects/game.png" alt="" />
+					 <div class="project__description">
+						 <h3>Project</h3>
+						 <span>Explanation</span>
+					 </div>
+				 </a>
+				 <a href="" class="project" data-type="mobile">
+					 <img class="project__img" src="imgs/projects/game.png" alt="" />
+					 <div class="project__description">
+						 <h3>Project</h3>
+						 <span>Explanation</span>
+					 </div>
+				 </a>
+				 <a href="" class="project" data-type="mobile">
+					 <img class="project__img" src="imgs/projects/game.png" alt="" />
+					 <div class="project__description">
+						 <h3>Project</h3>
+						 <span>Explanation</span>
+					 </div>
+				 </a>
+			 </div>
 			</div>
 		 </section>
 

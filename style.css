@@ -104,10 +104,35 @@ p {
 .navbar__menu__item.active{
   border:1px solid #ffffff;
   
-
 }
 
 .navbar__menu__item:hover{
   background-color: var(--color-dark-blue);
 
+}
+
+.section{
+  padding:50px;
+  text-align:center;
+  max-width:1200px; /*1000~1200 desktop */
+  margin:auto;
+}
+
+.job{
+  display:flex;
+  align-items: center;
+}
+
+.job__discription{
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__name{
+  font-size: var(--font-small);
+}
+
+
+.job__period{
+  font-size: var(--font-micro);
 }
