@@ -1,48 +1,271 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <meta name="description" content="ksh portfolio">
-    <meta name="author" content="ksh">
-    <script src="https://kit.fontawesome.com/bcc555da9c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script scr="main.js" defer></script>
-</head>
-<body>
+    <meta name="description" content="ksh portfolio" />
+    <meta name="author" content="ksh" />
+    <script
+      src="https://kit.fontawesome.com/bcc555da9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script scr="main.js" defer></script>
+  </head>
+  <body>
     <!-- navbar -->
     <nav id="navbar">
-        <div id="nav__logo">
-            <a href="#">Ellie</a>
-        </div>
-        <div id="nav__menu">
-            <ul class="navbar_menu">
-                <li class="navbar__menu__item">home</li>
-                <li class="navbar__menu__item">about</li>
-                <li class="navbar__menu__item">skills</li>
-                <li class="navbar__menu__item">my work</li>
-                <li class="navbar__menu__item">testimonial</li>
-                <li class="navbar__menu__item">contact</li>
-            </ul>
-        </div>
+      <div id="nav__logo">
+        <a href="#">ksh</a>
+      </div>
+      <div id="nav__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">home</li>
+          <li class="navbar__menu__item">about</li>
+          <li class="navbar__menu__item">skills</li>
+          <li class="navbar__menu__item">my work</li>
+          
+          <li class="navbar__menu__item">contact</li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- home -->
+    <section id="home">
+      <img src="imgs/profile.png" class="home__avatar" />
+
+      <h1 class="home__title">hello, <br />i'm dream coder</h1>
+      <h3 class="home__discription">Undergraduate student in seoul, korea.</h3>
+      <button class="home__contact">Contact Me</button>
+    </section>
 
     <!-- about -->
-    <section id="about"></section>
-    <!-- skills -->
-    <section id="skills"></section>
-    <!-- work -->
-    <section id="work"></section>
-    <!-- testimonials -->
-    <section id="testimonials"></section>
-    <!-- contact -->
-    <section id="contact"></section>
+    <section id="about">
+      <h1>About me</h1>
+      <p></p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon"></div>
+          <div class="major__title">html</div>
+          <div class="major__description"></div>
+        </div>
 
-</body>
+        <div class="major">
+          <div class="major__icon"></div>
+          <div class="major__title">css</div>
+          <div class="major__description"></div>
+        </div>
+
+        <div class="major">
+          <div class="major__icon"></div>
+          <div class="major__title">javascript</div>
+          <div class="major__description"></div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <p class="job__name">dgu</p>
+          <p class="job__period">2017~</p>
+        </div>
+        <div class="job">
+          <p class="job__name">conscripted firefighter</p>
+          <p class="job__period">2019~2021</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills">
+			<h1>skills</h1>
+			<h2>skills & attributes</h2>
+			<p>experience with all phases of the software</p>
+
+			<div class="skillset">
+				<div class="skillset__left">
+					<h3 class="skill__title">skills</h3>
+						<div class="skill">
+						<div class="skill_discription">
+							<span>html</span>
+							<span>60%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value">
+
+							</div>
+						</div>
+						
+					</div>
+					<div class="skill">
+						<div class="skill_discription">
+							<span>css</span>
+							<span>50%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value">
+
+							</div>
+						</div>
+						
+					</div>
+					<div class="skill">
+						<div class="skill_discription">
+							<span>javascript</span>
+							<span>40%</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value">
+
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="skillset__right">
+					<div class="tools">
+						<h3 class="skill__title">Tools</h3>
+						<ul class="tools__list">
+							<li><span>vs code</span></li>
+							<li><span>pycharm</span></li>
+							<li><span></span></li>
+						</ul>
+				
+					</div>
+					<div class="Education">
+						<h3 class="skill__title">Education</h3>
+							<ul class="etc__list">
+								<li><span>SoftwareEngineering A+</span></li>
+								<li><span>DataStructure B+</span></li>
+								<li><span>Statistics A+</span></li>
+								<li><span></span></li>
+								
+							</ul>
+					</div>
+				</div>
+			</div>
+    </section>
+
+	
+    <!-- Work -->
+    <section id="work" class="section">
+			<div class="section__container">
+			<h1>My work</h1>
+			<h3>Projects</h3>
+			<div class="work__categories">
+			<button class="category__btn selected" data-filter="*">
+			All <span class="category__count">8</span>
+			</button>
+			<button class="category__btn" data-filter="front-end">
+			Front-end <span class="category__count">3</span>
+			</button>
+			<button class="category__btn" data-filter="back-end">
+			Back-end <span class="category__count">3</span>
+			</button>
+			<button class="category__btn" data-filter="mobile">
+			Mobile <span class="category__count">2</span>
+			</button>
+			</div>
+			<div class="work__projects">
+			<a href="" class="project" target="blank" data-type="front-end">
+			<img
+			src="imgs/projects/youtube.png"
+			alt="Youtube"
+			class="project__img"
+			/>
+			<div class="project__description">
+			<h3>Youtube Site</h3>
+			<span>Clone coding with HTML, CSS</span>
+			</div>
+			</a>
+			<a
+			href="https://github.com/dream-ellie/responsive-nav-bar"
+			class="project"
+			data-type="front-end"
+			target="blank"
+			>
+			<img
+			class="project__img"
+			src="imgs/projects/navbar.png"
+			alt="navbar"
+			/>
+			<div class="project__description">
+			<h3>Responsive Navbar</h3>
+			<span>HTML, CSS with media query</span>
+			</div>
+			</a>
+			<a
+			href="https://github.com/dream-ellie/responsive-nav-bar"
+			class="project"
+			data-type="front-end"
+			target="blank"
+			>
+			<img class="project__img" src="imgs/projects/game.png" alt="navbar" />
+			<div class="project__description">
+			<h3>Shopping mall game</h3>
+			<span>HTML, CSS, JavaScript, Json</span>
+			</div>
+			</a>
+			<a href="" class="project" data-type="back-end">
+			<img class="project__img" src="imgs/projects/game.png" alt="" />
+			<div class="project__description">
+			<h3>Project</h3>
+			<span>Explanation</span>
+			</div>
+			</a>
+			<a href="" class="project" data-type="back-end">
+			<img class="project__img" src="imgs/projects/game.png" alt="" />
+			<div class="project__description">
+			<h3>Project</h3>
+			<span>Explanation</span>
+			</div>
+			</a>
+			<a href="" class="project" data-type="mobile">
+			<img class="project__img" src="imgs/projects/game.png" alt="" />
+			<div class="project__description">
+			<h3>Project</h3>
+			<span>Explanation</span>
+			</div>
+			</a>
+			<a href="" class="project" data-type="mobile">
+			<img class="project__img" src="imgs/projects/game.png" alt="" />
+			<div class="project__description">
+			<h3>Project</h3>
+			<span>Explanation</span>
+			</div>
+			</a>
+			<a href="" class="project" data-type="mobile">
+			<img class="project__img" src="imgs/projects/game.png" alt="" />
+			<div class="project__description">
+			<h3>Project</h3>
+			<span>Explanation</span>
+			</div>
+			</a>
+			</div>
+			</div>
+		 </section>
+
+	
+ 
+		 <!-- Contact -->
+		 <section id="contact" class="section">
+			 <h1 class="contact__title">Let's talk</h1>
+			 <h2 class="contact__email">stevekim97g@gmail.com</h2>
+			 <div class="contact__links">
+				 <a href="https://github.com/ksh322" target="_blank">
+					 <i class="fab fa-github"></i>
+				 </a>
+				 
+			 </div>
+			 <p class="contact__rights">
+				 2020 Dream Coding  - All rights reserved
+			 </p>
+		 </section>
+  </body>
 </html>
