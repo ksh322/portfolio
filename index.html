@@ -36,6 +36,10 @@
           <li class="navbar__menu__item">contact</li>
         </ul>
       </div>
+			<!-- toggle -->
+				<button class="navbar__toggle-btn">
+					<i class="fas fa-bars"></i>
+				</button>
     </nav>
 
     <!-- home -->
@@ -56,7 +60,7 @@
 					<img src="imgs/dgu.jpg" alt="dgu" class="job__logo"/>
           <div class="job__discription">
 						<p class="job__name">Dongguk Univ Seoul</p>
-          	<p class="job__period">17'~ Majoring Information Engineering </p>
+          	<p class="job__period">2017~ Majoring Information Engineering </p>
         	</div>
 				</div>
         <div class="job">
@@ -71,17 +75,18 @@
 
     <!-- skills -->
     <section id="skills" class="section">
-			<h1>skills</h1>
+			<div class="section__container">
+				<h1>skills</h1>
 			<h2>languages & educations</h2>
 			<p>experience with all phases of the software</p>
 
 			<div class="skillset">
 				<div class="skillset__left">
-					<h3 class="skill__title">languages</h3>
+					<h3 class="skill__title">program languages</h3>
 						<div class="skill">
-						<div class="skill_discription">
-							<span>html</span>
-							<span>60%</span>
+						<div class="skill__discription">
+							<span>html/ css</span>
+							<span>medium</span>
 						</div>
 						<div class="skill__bar">
 							<div class="skill__value">
@@ -91,24 +96,24 @@
 						
 					</div>
 					<div class="skill">
-						<div class="skill_discription">
-							<span>css</span>
-							<span>50%</span>
-						</div>
-						<div class="skill__bar">
-							<div class="skill__value">
-
-							</div>
-						</div>
-						
-					</div>
-					<div class="skill">
-						<div class="skill_discription">
+						<div class="skill__discription">
 							<span>javascript</span>
-							<span>40%</span>
+							<span>medium</span>
 						</div>
 						<div class="skill__bar">
 							<div class="skill__value">
+
+							</div>
+						</div>
+						
+					</div>
+					<div class="skill">
+						<div class="skill__discription">
+							<span>python</span>
+							<span>high</span>
+						</div>
+						<div class="skill__bar">
+							<div class="skill__value" style="width: 80%">
 
 							</div>
 						</div>
@@ -116,20 +121,12 @@
 					</div>
 				</div>
 				<div class="skillset__right">
-					<div class="tools">
-						<h3 class="skill__title">Tools</h3>
-						<ul class="tools__list">
-							<li><span>vs code</span></li>
-							<li><span>pycharm</span></li>
-							<li><span></span></li>
-						</ul>
-				
-					</div>
+					
 					<div class="Education">
 						<h3 class="skill__title">Education</h3>
 							<ul class="etc__list">
-								<li><span>SoftwareEngineering A+</span></li>
-								<li><span>DataStructure B+</span></li>
+								<li><span>SWEngineering A+</span></li>
+								<li><span>Data Structure B+</span></li>
 								<li><span>Statistics A+</span></li>
 								<li><span></span></li>
 								
@@ -137,26 +134,27 @@
 					</div>
 				</div>
 			</div>
+			</div>
+			
     </section>
 
 	
     <!-- Work -->
     <section id="work" class="section">
 			<div class="section__container">
-			 <h1>My work</h1>
-			 <h3>Projects</h3>
-			 <div class="work__categories">
-				 <button class="category__btn selected" data-filter="*">
-					 All <span class="category__count">8</span>
-				 </button>
-				 <button class="category__btn" data-filter="front-end">
-					 Front-end <span class="category__count">3</span>
+				<h1>My work</h1>
+				<h3>Projects</h3>
+				<div class="work__categories">
+					<button class="category__btn selected" data-filter="*">
+					All <span class="category__count">6</span>
+					</button>
+					<button class="category__btn" data-filter="front-end">
+					Front-end <span class="category__count">3</span>
 				 </button>
 				 <button class="category__btn" data-filter="back-end">
 					 Back-end <span class="category__count">3</span>
 				 </button>
-				 <button class="category__btn" data-filter="mobile">
-					 Mobile <span class="category__count">2</span>
+				 
 				 </button>
 			 </div>
 			 <div class="work__projects">
@@ -220,21 +218,9 @@
 						 <span>Explanation</span>
 					 </div>
 				 </a>
-				 <a href="" class="project" data-type="mobile">
-					 <img class="project__img" src="imgs/projects/game.png" alt="" />
-					 <div class="project__description">
-						 <h3>Project</h3>
-						 <span>Explanation</span>
-					 </div>
-				 </a>
-				 <a href="" class="project" data-type="mobile">
-					 <img class="project__img" src="imgs/projects/game.png" alt="" />
-					 <div class="project__description">
-						 <h3>Project</h3>
-						 <span>Explanation</span>
-					 </div>
-				 </a>
-			 </div>
+				 
+				 
+			 
 			</div>
 		 </section>
 
