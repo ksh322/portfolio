@@ -85,15 +85,21 @@ p {
 
 /* navbar */
 #navbar {
+  position:fixed;
+  width:100%;
   display:flex;
   justify-content: space-between;
   background-color:var(--color-blue);
   align-items: center;
   color:#ffffff;
-  padding:16px;
-
+  padding:4px;
+  transition: 300ms ease-in-out;
+  z-index: 1;
 }
-
+#navbar.navbar--dark{
+  background-color: var(--color_dark-blue);
+  
+}
 .navbar__menu{
   display:flex;
 
@@ -126,6 +132,15 @@ p {
   color:white;
   display:none;
 }
+
+/* Home */
+#home {
+  background: url('imgs/home-background.png') center/cover no-repeat;
+  padding: 40px;
+  padding-top: 120px;
+  text-align: center;
+}
+
 .section{
   padding:50px;
   text-align:center;
@@ -310,7 +325,7 @@ p {
   transition:all 300ms ease-in;
 }
 
-@media screen and (max-width:768px){
+@media screen and (){
   .navbar__toggle-btn {
     display: block;
   }
