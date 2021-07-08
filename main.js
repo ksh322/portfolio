@@ -24,11 +24,18 @@ navbarMenu.addEventListener('click', (event) => {
   scrollto.scrollIntoView();
 });
 
-//contactMe btn scroll to <section 'contact'>
+//contactMe btn scroll to <section id='contact'>
 
 const contactme=document.querySelector('.home__contact');
 contactme.addEventListener('click', (event)=>{
   
   const scrollto= document.querySelector('#contact');
   scrollto.scrollIntoView();
+});
+
+//make home slowly fade to transparent as window scrolls down
+const home= document.querySelector('.home__container');
+const homeheight = home.getBoundingClientRect().height;
+document.addEventListener('scroll',()=>{
+  home.style.opacity= 1- window.scrollY / homeheight ;
 });

@@ -89,7 +89,7 @@ p {
   width:100%;
   display:flex;
   justify-content: space-between;
-  background-color:var(--color-blue);
+  background-color: transparent;
   align-items: center;
   color:#ffffff;
   padding:4px;
@@ -97,7 +97,7 @@ p {
   z-index: 1;
 }
 #navbar.navbar--dark{
-  background-color: var(--color_dark-blue);
+  background-color: var(--color-blue);
   
 }
 .navbar__menu{
@@ -141,6 +141,12 @@ p {
   text-align: center;
 }
 
+.home__title{
+  color:white;
+}
+.home__discription{
+  color:white;
+}
 .section{
   padding:50px;
   text-align:center;
