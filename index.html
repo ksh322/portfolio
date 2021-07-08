@@ -44,11 +44,13 @@
     <!-- home -->
     <section id="home" class="section">
 			<div class="home__container">
-				<img src="imgs/profile.png" class="home__avatar" />
-			
-      <h1 class="home__title">hello, <br />i'm dream coder</h1>
-      <h3 class="home__discription">Undergraduate student in seoul, korea</h3><br>
-      <button class="home__contact">Contact Me</button>
+				<img src="imgs/profile.png" 
+				class="home__profile"
+				alt = "ksh" />
+				
+      	<h1 class="home__title">hello, <br />i'm dream coder</h1>
+      	<h3 class="home__discription">Undergraduate student in seoul, korea</h3><br>
+      	<button class="home__contact">Contact Me</button>
 			</div>
     </section>
 
@@ -141,72 +143,66 @@
 
 	
     <!-- Work -->
-    <section id="work" class="section">
-			<div class="section__container">
-				<h1>My work</h1>
-				<h3>Projects</h3>
-				<div class="work__categories">
-					<button class="category__btn selected" data-filter="*">
-					All <span class="category__count">5</span>
-					</button>
-					<button class="category__btn" data-filter="front-end">
-					Front-end <span class="category__count">3</span>
-				 </button>
-				 <button class="category__btn" data-filter="back-end">
-					 Back-end <span class="category__count">2</span>
-				 </button>
-				 
-				 </button>
-			 </div>
-			 <div class="work__projects">
-				 <a href="" class="project" target="blank" data-type="front-end">
-					 <img
-						 src="imgs/projects/youtube.png"
-						 alt="Youtube"
-						 class="project__img"
-					 />
-					 <div class="project__description">
-						 <h3>Youtube Site</h3>
-						 <span>Clone coding with HTML, CSS</span>
-					 </div>
-				 </a>
-				 <a
-					 href="https://github.com/dream-ellie/responsive-nav-bar"
-					 class="project"
-					 data-type="front-end"
-					 target="blank"
-				 >
-					 <img
-						 class="project__img"
-						 src="imgs/projects/navbar.png"
-						 alt="navbar"
-					 />
-					 <div class="project__description">
-						 <h3>Responsive Navbar</h3>
-						 <span>HTML, CSS with media query</span>
-					 </div>
-				 </a>
-				 <a
-					 href="https://github.com/dream-ellie/responsive-nav-bar"
-					 class="project"
-					 data-type="front-end"
-					 target="blank"
-				 >
-					 <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
-					 <div class="project__description">
-						 <h3>Shopping mall game</h3>
-						 <span>HTML, CSS, JavaScript, Json</span>
-					 </div>
-				 </a>
+  <section id="work" class="section">
+		<div class="section__container">
+			<h1>My work</h1>
+			<h3>Projects</h3>
+			<div class="work__categories">
+				<button class="category__btn selected" data-filter="*">
+					All <span class="category__count">4</span>
+				</button>
+				<button class="category__btn" data-filter="front-end">
+				Front-end <span class="category__count">3</span>
+				</button>
+				<button class="category__btn" data-filter="back-end">
+				Back-end <span class="category__count">1</span>
+				</button>
+
+
+		</div>
+	
+		<div class="work__projects">
+			<a href="https://github.com/ksh322/portfolio"
+			class="project" target="blank" data-type="front-end">
+			<img
+			src="imgs/projects/youtube.png"
+			alt="portfolio"
+			class="project__img"/>
+		
+			<div class="project__description">
+				<h3>Portfolio</h3>
+				<span>Clone coding with HTML, CSS</span>
+			</div>
+			</a>
+			
+			<a href="https://github.com/ksh322/momentum"
+			class="project" target="blank" data-type="front-end">
+			<img
+			src="imgs/projects/momentum.jpg"
+			alt="momentum"
+			class="project__img"/>
+		
+			<div class="project__description">
+				<h3>Momentum</h3>
+				<span>Clone Web APP with HTML, CSS</span>
+			</div>
+			</a>
+
+			<a href="https://github.com/ksh322/portfolio"
+			class="project" target="blank" data-type="front-end">
+			<img
+			src="imgs/projects/game.png"
+			alt="shopping mall game"
+			class="project__img"/>
+		
+			<div class="project__description">
+				<h3>ShoppingMall game</h3>
+				<span>shopping mall game with HTML, CSS, JSON</span>
+			</div>
+			</a>
+
 				 <a href="" class="project" data-type="back-end">
-					 <img class="project__img" src="imgs/projects/game.png" alt="" />
-					 <div class="project__description">
-						 <h3>Project</h3>
-						 <span>Explanation</span>
-					 </div>
-				 </a>
-				 <a href="" class="project" data-type="back-end">
-					 <img class="project__img" src="imgs/projects/game.png" alt="" />
+					 <img class="project__img" src="imgs/projects/game.png" alt="backend1" />
 					 <div class="project__description">
 						 <h3>Project</h3>
 						 <span>Explanation</span>
@@ -214,23 +210,29 @@
 				 </a>
 				 
 			 
-			</div>
+		</div>
+	</section>
+
+
+		<!-- Contact -->
+		<section id="contact" class="section">
+			<h1 class="contact__title">Let's talk</h1>
+			<h2 class="contact__email">stevekim97g@gmail.com</h2>
+			<div class="contact__links">
+				<a href="https://github.com/ksh322" target="_blank">
+				<i class="fab fa-github"></i>
+				</a>
+
+		</div>
+		<p class="contact__rights">
+		2020 Dream Coding  - All rights reserved
+		</p>
 		</section>
 
-
-		 <!-- Contact -->
-		 <section id="contact" class="section">
-			 <h1 class="contact__title">Let's talk</h1>
-			 <h2 class="contact__email">stevekim97g@gmail.com</h2>
-			 <div class="contact__links">
-				 <a href="https://github.com/ksh322" target="_blank">
-					 <i class="fab fa-github"></i>
-				 </a>
-				 
-			 </div>
-			 <p class="contact__rights">
-				 2020 Dream Coding  - All rights reserved
-			 </p>
-		 </section>
+		<!-- Arrow up button -->
+		
+		<button class= "arrowup">
+			<i class="fas fa-arrow-circle-up"></i>
+		</button>
   </body>
 </html>

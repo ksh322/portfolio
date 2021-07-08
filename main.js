@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
@@ -6,8 +6,8 @@ const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   if (window.scrollY > navbarHeight) 
     navbar.classList.add('navbar--dark');
-    else 
-      navbar.classList.remove('navbar--dark');
+  else 
+    navbar.classList.remove('navbar--dark');
     
 });
 
@@ -19,9 +19,9 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
-  navbarMenu.classList.remove('open');//?
+  navbarMenu.classList.remove('open');//open?
   const scrollto= document.querySelector(link);
-  scrollto.scrollIntoView();
+  scrollto.scrollIntoView({ behavior: 'smooth' });
 });
 
 //contactMe btn scroll to <section id='contact'>
@@ -29,8 +29,7 @@ navbarMenu.addEventListener('click', (event) => {
 const contactme=document.querySelector('.home__contact');
 contactme.addEventListener('click', (event)=>{
   
-  const scrollto= document.querySelector('#contact');
-  scrollto.scrollIntoView();
+  scrollIntoView('#contact');
 });
 
 //make home slowly fade to transparent as window scrolls down
@@ -39,3 +38,46 @@ const homeheight = home.getBoundingClientRect().height;
 document.addEventListener('scroll',()=>{
   home.style.opacity= 1- window.scrollY / homeheight ;
 });
+
+//show arrowup buttton when scrollingup
+const arrow=document.querySelector('.arrowup');
+
+document.addEventListener('scroll',()=>{
+  if (window.scrollY >homeheight/2)
+    arrow.classList.add('visible');
+  else
+    arrow.classList.remove('visible');
+});
+//handle click on arrowup button=>scrolltotop
+
+arrow.addEventListener('click',(event)=>{
+  scrollIntoView('#home');
+});
+
+function scrollIntoView(selector){
+  const scrollto= document.querySelector(selector);
+  scrollto.scrollIntoView({ behavior: 'smooth' });
+  
+}
+
+//Projects
+
+const workBtnContainer=document.querySelector('.work__categories');
+const projectContainer=document.querySelector('.work__projects');
+const projects=document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click',(event)=>{
+  const filter= event.target.dataset.filter||event.target.parentNode.dataset.filter;
+  console.log(filter);
+  if (filter==null)
+    return;
+  
+  projects.forEach((project)=>{
+    if (filter === '*' || filter === project.dataset.type) {
+      project.classList.remove('invisible');
+    } else {
+      project.classList.add('invisible');
+      }
+  });
+  
+});
+
