@@ -113,14 +113,11 @@ p {
   border-radius: 4px;
 }
 
-.navbar__menu__item.active {
-  border: 1px solid white;
-  border-radius: var(--size-border-radius);
-}
 
 .navbar__menu__item:hover {
+  border: 1px solid white;
+  
   background-color: var(--color_dark-blue);
-  border-radius: var(--size-border-radius);
 }
 
 
@@ -143,7 +140,7 @@ p {
 }
 
 .home__profile{
-  border-radius: 50%;
+  
 }
 .home__title{
   color:white;
@@ -235,7 +232,7 @@ p {
   margin:40px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover{
   background-color: var(--color_dark-blue);
   color:var(--color-white);

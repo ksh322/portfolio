@@ -71,6 +71,10 @@ workBtnContainer.addEventListener('click',(event)=>{
   if (filter==null)
     return;
   
+    //remove selection from the previous item and select new one
+  const active= document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  event.target.classList.add('selected');
   projects.forEach((project)=>{
     if (filter === '*' || filter === project.dataset.type) {
       project.classList.remove('invisible');
@@ -80,4 +84,6 @@ workBtnContainer.addEventListener('click',(event)=>{
   });
   
 });
+
+
 
