@@ -412,7 +412,7 @@ p {
 }
 
 
-@media screen and (){
+@media screen and (max-width :600px){
   .navbar__toggle-btn {
     display: block;
   }
@@ -422,19 +422,28 @@ p {
     align-items: flex-start;
   }
 
+  #navbar.navbar--dark {
+    padding:16px;
+  }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+    background-color: var(-color-blue);
   }
+  .navbar__menu.open {
+    display: block;
 
+  }
   .major{
     margin-bottom:38px;
   }
   .skillset{
     flex-direction:column;
   }
-
-
+  .contact__email{
+    font-size:smaller;
+  }
 }

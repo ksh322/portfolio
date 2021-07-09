@@ -24,6 +24,14 @@ navbarMenu.addEventListener('click', (event) => {
   scrollto.scrollIntoView({ behavior: 'smooth' });
 });
 
+
+//navgar toggle for small screen 
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', (event) => {
+  navbarMenu.classList.toggle('open');
+});
+
+
 //contactMe btn scroll to <section id='contact'>
 
 const contactme=document.querySelector('.home__contact');
@@ -84,6 +92,7 @@ workBtnContainer.addEventListener('click',(event)=>{
   });
   
 });
+
 
 
 
