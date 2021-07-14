@@ -93,6 +93,27 @@ workBtnContainer.addEventListener('click',(event)=>{
   
 });
 
+//1모든 섹션요소를 가지고온다
+//2intersectionObserver을 이용해 모든 섹션을 관찰
+//3 보여지는 섹션에 해당하는 메뉴아이템 활성화
 
+const sectionID=['#home','#about','#skills','#work','#contact',];
+const sections = sectionID.map(id=>document.querySelector(id));
+const navitems = sectionID.map(id=>document.querySelector(`[data-link="${id}"]`));
+console.log(navitems);
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.3,
+
+};
+
+const observerCallback=(entries, observer)=>{
+  entries.forEach(entry=>{});
+  console.log(entry.target);
+};
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section =>observer(section));
 
 

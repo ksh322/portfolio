@@ -44,7 +44,12 @@ body{
   margin:0;
   font-family: 'Open Sans', sans-serif;
 }
-
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 a{
   text-decoration: none;
   color:var(--color-white);
@@ -113,6 +118,11 @@ p {
   border-radius: 4px;
 }
 
+.navbar__menu__item.active{
+  
+  border: 1px solid white;
+}
+
 
 .navbar__menu__item:hover {
   border: 1px solid white;
@@ -123,7 +133,7 @@ p {
 
 .navbar__toggle-btn{
   position:absolute;
-  
+  top: 10px;
   right:32px;
   font-size:24px;
   color:white;
@@ -223,9 +233,11 @@ p {
 }
 
 .category__btn{
+  position: relative;
   border:1px solid var(--color-dark-white);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  
 }
 
 .work__categories{
@@ -247,9 +259,9 @@ p {
   height:24px;
   line-height:24px;
   display: inline-block;
-  position: relative;
-  top:-20px;
-  left:4px;
+  position: absolute;
+  top:-10px;
+  right:4px;
   
 }
 
@@ -415,6 +427,7 @@ p {
 @media screen and (max-width :600px){
   .navbar__toggle-btn {
     display: block;
+    background-color: var(--color-blue)
   }
 
   #navbar {
@@ -431,7 +444,7 @@ p {
     text-align: center;
     width: 100%;
     display: none;
-    background-color: var(-color-blue);
+    background-color: var(--color-blue);
   }
   .navbar__menu.open {
     display: block;
@@ -442,6 +455,11 @@ p {
   }
   .skillset{
     flex-direction:column;
+  }
+
+  .category__btn{
+    display:inline-block;
+    padding:4px;
   }
   .contact__email{
     font-size:smaller;
