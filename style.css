@@ -174,7 +174,10 @@ p {
 .job{
   align-items: center;
 }
-
+.job__logo2{
+  
+  font-size: smaller;
+}
 .job__discription{
   margin: 0 16px;
   text-align: center;
