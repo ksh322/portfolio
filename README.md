@@ -4,4 +4,5 @@
 
 # Built with 
 
--JS ES6
+- JS ES6
+-jekyll-theme-architect
